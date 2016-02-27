@@ -2,13 +2,30 @@
 <html>
   <head>
     <style>
-      #map {
-        width: 500px;
-        height: 400px;
+      body  {
+        position: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        right: 0;
+        z-index: -1;
+
+        display: block;
+        background-image: url("images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_the_British_Antarctic_Territory.jpg");
+        background-color: #cccccc;
+        width: 100%;
+        height: 100%;
       }
+    </style>
+    <link rel="stylesheet" href="css_(BOT)/style.css">
     </style>
   </head>
   <body>
+
+    <img src="images_(BOT)/BOT_Flags/Flag_of_the_British_Antarctic_Territory.png" alt="British Antaractic Territory's Official National Flag" height="200px" width="350px">
+
+    <h1 style="color:#228B22;">British Antaractic Territory</h1>
+
     <div id="map"></div>
     <script>
       function initMap() {
