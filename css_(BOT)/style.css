@@ -14,7 +14,17 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-weight: thick;
+  font-style: italic;
+  text-align: center;
+}
+
 img {
   margin: 0px auto;
   display: block;
+}
+
+a {
+  color: inherit;
 }
