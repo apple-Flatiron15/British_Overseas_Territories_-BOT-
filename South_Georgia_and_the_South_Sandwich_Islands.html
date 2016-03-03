@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body  {
-        position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        left: 0;
-        right: 0;
-        z-index: -1;
-
-        display: block;
-        background-image: url("images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_the_South_Georgia_and_South_Sandwich_Islands.png");
-        background-color: #cccccc;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
     <link rel="stylesheet" href="css_(BOT)/style.css">
   </head>
+
   <body>
 
     <img src="images_(BOT)/BOT_Flags/Flag_of_the_South_Georgia_and_South_Sandwich_Islands.png" alt="Gibraltar's Official National Flag" height="200px" width="350px">
 
-    <h1 style="color:#228B22;">South Georgia and the South Sandwich Islands</h1>
+    <img src="images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_the_South_Georgia_and_South_Sandwich_Islands.png" alt="South Georgia and South Sandwich Islands Coat of Arms" height="200px" width="350px">
 
-    <h2 style="color:#228B22;">Motto - "Leo terram propriam protegat" (Latin: "Let the lion protect his own land")</h2>
+    <h1>South Georgia and the South Sandwich Islands</h1>
+
+    <table border="1";>
+      <tr>
+        <th colspan="2">Quick Facts on the South Georgia and South Sandwich Islands</th>
+      </tr>
+
+      <tr>
+        <td>Capital (Research Station)</td>
+        <td><a href="https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/king-edward-point/" alt="British Antarctic Survey - King Edward Point Research Station">King Edward Point</a></td>
+      </tr>
+
+      <tr>
+        <td>Location</td>
+        <td>South Atlantic Ocean</td>
+      </tr>
+
+      <tr>
+        <td>Overall Land Size</td>
+        <td>1,570 square miles (rough estimate)</td>
+      </tr>
+
+      <tr>
+        <td>Population</td>
+        <td><a href="http://www.indexmundi.com/south_georgia_and_the_south_sandwich_islands/population.html" alt="Index Mundi - South Georgia and the South Sandwich Islands Population">Less than 100 (Varies between seasons; South Georgia Island [only]) (no indigenous population); Uninhabited (South Sandwich Islands)</a> (also click on this <a href="http://www.stampworldhistory.com/country-profiles-2/oceania-antarctica/south-georgia-the-south-sandwich-islands/" alt="Stamp World History - South Georgia and the South Sandwich Islands">link</a> for more information)</td>
+      </tr>
+
+      <tr>
+        <td>Year Established as a British 'crown colony'</td>
+        <td><a href="http://www.gov.gs/information/about-sgssi/" alt="Government of South Georgia and the South Sandwich Islands - Information ('About SGSSI') ">1843 (South Georgia Island); 1908 (South Sandwich Islands) (both were discovered by James Cook in 1775)</a></td>
+      </tr>
+
+      <tr>
+        <td>[Official] Motto</td>
+        <td><strong><i>Leo terram propriam protegat</i></strong> (Latin: "<strong>Let the lion protect his own land</strong>")</td>
+      </tr>      
+
+    </table> <br/>
 
     <div id="map"></div>
     <script>
       function initMap() {
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
-          center: {lat: -57.8553357, lng: -34.9592459},
+          center: {lat: -57.003717, lng: -31.399676},
           zoom: 5
         });
       }
