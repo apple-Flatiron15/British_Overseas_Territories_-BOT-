@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      #map {
-        width: 500px;
-        height: 400px;
-      }
-    </style>
+    <link rel="stylesheet" href="css_(BOT)/style.css">
   </head>
+
   <body>
 
-    <h1 style="color: #FF8C00;">Akrotiri and Dhekelia</h1>
+   <img src="images_(BOT)/BOT_Flags/Flag_of_the_United_Kingdom.png" alt="United Kingdom's Official National Flag" height="200px" width="350px">
+
+   <a href="images_(BOT)/Akrotiri_and_Dhekelia.jpg" alt="Akrotiri and Dhekelia Map (enlarged_"><img src="images_(BOT)/Akrotiri_and_Dhekelia.jpg" alt="Akrotiri and Dhekelia Map" height="200px" width="350px"></a>
+
+    <h1>Akrotiri and Dhekelia</h1>
+
+    <table border="1";>
+      <tr>
+        <th colspan="2">Quick Facts on Akrotiri and Dhekelia</th>
+      </tr>
+
+      <tr>
+        <td>Capital (Main Base)</td>
+        <td><a href="http://www.worldlibrary.org/articles/episkopi_cantonment" alt="World Public Library - Episkopi Cantonment">Episkopi Cantonment</a> (Akrotiri)</td>
+      </tr>
+
+      <tr>
+        <td>Location</td>
+        <td>Southern (Akrotiri) and Eastern Cyprus (Dhekelia)</td>
+      </tr>
+
+      <tr>
+        <td>Overall Land Size</td>
+        <td>98 square miles (rough estimate)</td>
+      </tr>
+
+      <tr>
+        <td>Population</td>
+        <td><a href="http://www.indexmundi.com/dhekelia/population.html" alt="Index Mundi - Dhekelia Population">Approx. 15,700+; population mostly consists of Cypriot citizens, UK military personnels and their families, and support staff</a></td>
+      </tr>
+
+      <tr>
+        <td>Year Established as a British 'crown colony'</td>
+        <td>1960 (by the '<strong><a href="http://www.sbaadministration.org/index.php/background" alt="Sovereign Base Areas - Background">Treaty of Establishment</a></strong>')</td>
+      </tr>
+
+      <tr>
+        <td>[Official] Motto</td>
+        <td>N/A</td>
+      </tr>      
+
+    </table> <br/>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/5WFWRlqqaxY" frameborder="0" allowfullscreen></iframe>
+    <figcaption>Credit goes to '<strong>Forces TV</strong>' for posting this video on YouTube.</figcaption> <br/>
 
     <div id="map"></div>
     <script>
       function initMap() {
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
-          center: {lat: 34.8210431, lng: 33.3601363},
-          zoom: 9
+          center: {lat: 34.85514, lng: 33.243407},
+          zoom: 8
         });
       }
     </script>
