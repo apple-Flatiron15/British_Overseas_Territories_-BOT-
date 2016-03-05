@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body  {
-        position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        left: 0;
-        right: 0;
-        z-index: -1;
-
-        display: block;
-        background-image: url("images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_the_Ascension_Island.jpg");
-        background-color: #cccccc;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
     <link rel="stylesheet" href="css_(BOT)/style.css">
   </head>
+
   <body>
     
     <img src="images_(BOT)/BOT_Flags/Flag_of_the_Ascension_Island.png" alt="Ascension Island's Official National Flag" height="200px" width="350px">
 
-    <h1 style="color:#0000FF">Ascension Island</h1>
+    <img src="images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_the_Ascension_Island.jpg" alt="Ascension Island's Official Coat of Arms" height="200px" width="350px">
 
-    <iframe id="map" src="https://www.google.com/maps/d/embed?mid=zHxdFiJV0Xmw.k32XOxqmNw40" width="640" height="480"></iframe>
-      <!--Utilized the example format from this site ('How to pin point multiple locations on Google maps' (https://www.create.net/support/218-how-to-pin-point-multiple-locations-on-google-maps.html)) to embed this map into this webpage.-->
+    <h1>Ascension Island (part of the 'Saint Helena territorial island chain')</h1>
+
+    <table border="1";>
+      <tr>
+        <th colspan="2">Quick Facts on the Ascension Island</th>
+      </tr>
+
+      <tr>
+        <td>Capital</td>
+        <td>Georgetown (Population: About 450+ (2008))</td>
+      </tr>
+
+      <tr>
+        <td>Location</td>
+        <td>South Atlantic Ocean, about 700 miles northwest of the island of Saint Helena (check the link below in the next row)</td>
+      </tr>
+
+      <tr>
+        <td>Overall Land Size</td>
+        <td><a href="http://www.ascension-island.gov.ac/the-island/" alt="Ascension Island.gov - The Island">34 square miles</a> (rough estimate)</td>
+      </tr>
+
+      <tr>
+        <td>Population</td>
+        <td>Varies (according to various online sources, the population could range anywhere between 800+ to 1,100+, since the year 2010); <a href=http://www.mysterra.org/webmag/ascension-island/population.html alt="Mysterra Magazine - Ascension Island (Population)">the population consists of mostly citizens from the island of Saint Helena, as well as a number of British and American civilian and military personnels</a> (no indigenous population)</td>
+      </tr>
+
+      <tr>
+        <td>Year Established as a British 'crown colony'</td>
+        <td><a href="http://www.legislation.gov.uk/uksi/2009/1751/schedule/made" alt="Legislation.gov.uk - The St Helena, Ascension and Tristan da Cunha Constitution Order 2009">1922 (see 'Preamble - subsection (d)')</a></td>
+      </tr>
+
+      <tr>
+        <td>[Official] Motto</td>
+        <td>N/A</td>
+      </tr>      
+
+    </table> <br/>
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: -7.9562938, lng: -14.4244776},
+          zoom: 10
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+      <!--Utilized the example format from this site ('Google Developers - Adding a Google Map to your website' (https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map)) to embed this map into this webpage.-->
   </body>
 </html>

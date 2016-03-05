@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body  {
-        position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        left: 0;
-        right: 0;
-        z-index: -1;
-
-        display: block;
-        background-image: url("images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_Saint_Helena.png");
-        background-color: #cccccc;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
     <link rel="stylesheet" href="css_(BOT)/style.css">
   </head>
+
   <body>
     
     <img src="images_(BOT)/BOT_Flags/Flag_of_Saint_Helena.png" alt="Saint Helena's Official National Flag" height="200px" width="350px">
 
-    <h1 style="color:#228B22">Saint Helena</h1>
+    <img src="images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_Saint_Helena.png" alt="Saint Helena's Official Coat of Arms" height="200px" width="350px">
 
-    <h2 style="color:#228B22">Motto - "Loyal and Unshakeable"</h2>
+    <h1>Saint Helena</h1>
 
-    <iframe id="map" src="https://www.google.com/maps/d/embed?mid=zHxdFiJV0Xmw.k32XOxqmNw40" width="640" height="480"></iframe>
-      <!--Utilized the example format from this site ('How to pin point multiple locations on Google maps' (https://www.create.net/support/218-how-to-pin-point-multiple-locations-on-google-maps.html)) to embed this map into this webpage.-->
+    <table border="1";>
+      <tr>
+        <th colspan="2">Quick Facts on Saint Helena</th>
+      </tr>
+
+      <tr>
+        <td>Capital</td>
+        <td>Jamestown (Population: 600+ to 700+)</td>
+      </tr>
+
+      <tr>
+        <td>Location</td>
+        <td>South Atlantic Ocean</td>
+      </tr>
+
+      <tr>
+        <td>Overall Land Size</td>
+        <td><a href="http://www.britannica.com/place/Saint-Helena-island-South-Atlantic-Ocean" alt="Encylopedia Britannica - Saint Helena">47 square miles</a> (rough estimate)</td>
+      </tr>
+
+      <tr>
+        <td>Population</td>
+        <td><a href="http://countrymeters.info/en/Saint_Helena" alt="Country Meter - Saint Helena Population">4,134 (2016; subject to change)</a> (there are other [online] sources that place the current population between 4,000+ and 4,200+ between 2015 and 2016)</td>
+      </tr>
+
+      <tr>
+        <td>Year Established as a British 'crown colony'</td>
+        <td><a href="http://www.legislation.gov.uk/uksi/2009/1751/schedule/made" alt="Legislation.gov.uk - The St Helena, Ascension and Tristan da Cunha Constitution Order 2009">1834 (see 'Preamble - subsection (b)')</a></td>
+      </tr>
+
+      <tr>
+        <td>[Official] Motto</td>
+        <td><strong><i>Loyal and Unshakeable</i></strong></td>
+      </tr>      
+
+    </table> <br/>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/yXG5OyziGzo" frameborder="0" allowfullscreen></iframe>
+    <figcaption>Credit goes to the '<strong>St. Helena Tourism</strong>' for posting this video on YouTube.</figcaption> <br/>
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: -15.9620581, lng: -5.7834599},
+          zoom: 10
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+      <!--Utilized the example format from this site ('Google Developers - Adding a Google Map to your website' (https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map)) to embed this map into this webpage.-->
   </body>
 </html>
