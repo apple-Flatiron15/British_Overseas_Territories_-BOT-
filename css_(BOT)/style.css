@@ -13,6 +13,7 @@ body {
   margin-left: -150px;
   /*Utilized the format of the answer in this link: ('Stack Overflow - CSS, CENTERED element over Google Maps'
   (http://stackoverflow.com/questions/9708569/css-centered-element-over-google-maps))*/
+  z-index: -1;
 }
 
 h1 {
