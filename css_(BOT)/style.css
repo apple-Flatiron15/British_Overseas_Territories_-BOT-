@@ -35,6 +35,16 @@ img {
 
 a {
   color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: green;
 }
 
 table {
@@ -46,4 +56,5 @@ table {
 
 tr th {
   font-size: 150%;
+  text-align:center;
 }
