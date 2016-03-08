@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body  {
-        position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        left: 0;
-        right: 0;
-        z-index: -1;
-
-        display: block;
-        background-image: url("images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_the_Cayman_Islands.png");
-        background-color: #cccccc;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
     <link rel="stylesheet" href="css_(BOT)/style.css">
   </head>
+  
   <body>
 
     <img src="images_(BOT)/BOT_Flags/Flag_of_the_Cayman_Islands.jpg" alt="Cayman Islands' Official National Flag" height="200px" width="350px">
 
-    <h1 style="color:#00CED1;">Cayman Islands</h1>
+    <img src="images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_the_Cayman_Islands.png" alt="Cayman Islands' Official Coat of Arms" height="200px" width="350px">
 
-    <h2 style="color:#00CED1;">Motto - "He hath founded it upon the seas"</h2>
+    <h1>Cayman Islands</h1>
+
+    <table border="1";>
+      <tr>
+        <th colspan="2">Quick Facts on the Cayman Islands</th>
+      </tr>
+
+      <tr>
+        <td>Capital</td>
+        <td>George Town (<a href="http://www.geoba.se/location.php?query=George+Town+Cayman+Islands">Population: 29,370</a> (rough estimate)) on Grand Cayman Island</td>
+      </tr>
+
+      <tr>
+        <td>Location</td>
+        <td>Western Caribbean Sea ('<a href="https://en.wikipedia.org/wiki/Greater_Antilles" alt="Wikipedia - Greater Antilles">Greater Antilles</a>'')</td>
+      </tr>
+
+      <tr>
+        <td>Overall Land Size</td>
+        <td>102 square miles (rough estimate); this land size includes the three islands that makes up the Cayman Islands: <a href="https://en.wikipedia.org/wiki/Grand_Cayman" alt="Wikipedia - Grand Cayman"><strong>Grand Cayman</strong></a> (the largest and most populous of the three) and its 'sister islands,' <a href="https://en.wikipedia.org/wiki/Cayman_Brac" alt="Wikipedia - Cayman Brac"><strong>Cayman Brac</strong></a> and <a href="https://en.wikipedia.org/wiki/Little_Cayman" alt="Wikipedia - Little Cayman"><strong>Little Cayman</strong></a>.</td>
+      </tr>
+
+      <tr>
+        <td>Population</td>
+        <td><a href="http://countrymeters.info/en/Cayman_Islands" alt="Country Meters - Cayman Islands">63,258 (2016; subject to change)</a> (there are other [online] sources that have placed the current population anywhere between 54,000+ and 60,000+ between 2013 and 2016)</td>
+      </tr>
+
+      <tr>
+        <td>Year Established as a British 'crown colony'</td>
+        <td><a href="http://www.caymannewresident.com/history-politics-of-cayman" alt="Cayman New Resident - Government, History and Politics of Cayman">1962 (was originally a colony of <strong>Jamaica</strong> after Spain ceded these lands in 1670); Jamaica chose to become an independent [Commonwealth] nation in that same year.</a></td>
+      </tr>
+
+      <tr>
+        <td>[Official] Motto</td>
+        <td>"<strong><i>He hath founded it upon the seas</i></strong>"</td>
+      </tr>
+
+    </table> <br/>
+
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/aEzLcXMNDKg" frameborder="0" allowfullscreen></iframe>
+    <figcaption>Credit goes to the '<a href="https://www.youtube.com/channel/UCmSNtuF5gjsZJh-TzrE3Reg" alt="YouTube Home Page - Caribbean Tourism Organization"><strong>Caribbean Tourism Organization</strong></a>' for posting this video on YouTube.</figcaption> <br/>
+    <!--If you watch this video on the browser, one commenter pointed that at least one small party of the video is outdated. The Caribbean Tourism Organization took note of that observation and suggests goint to the YouTube Home Page Account of 'CaymanTourism' for more up-to-date on the overseas territory.-->
 
     <div id="map"></div>
     <script>
       function initMap() {
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
-          center: {lat: 19.5122528, lng: -81.0118448},
+          center: {lat: 19.5970936, lng: -80.4827531},
           zoom: 8
         });
       }

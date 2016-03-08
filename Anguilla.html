@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body  {
-        position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        left: 0;
-        right: 0;
-        z-index: -1;
-
-        display: block;
-        background-image: url("images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_Anguilla.png");
-        background-color: #cccccc;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
     <link rel="stylesheet" href="css_(BOT)/style.css">
   </head>
+  
   <body>
 
     <img src="images_(BOT)/BOT_Flags/Flag_of_Anguilla.png" alt="Anguilla's Official National Flag" height="200px" width="350px">
 
-    <h1 style="color:#228B22;">Anguilla</h1>
+    <img src="images_(BOT)/BOT_Coat_of_Arms/Coat_of_Arms_of_Anguilla.png" alt="Anguilla's Official Coat of Arms" height="200px" width="350px">
 
-    <h2 style="color:#228B22;">Motto - "Strength and Endurance"</h2>
+    <h1>Anguilla</h1>
+
+    <table border="1";>
+      <tr>
+        <th colspan="2">Quick Facts on Anguilla</th>
+      </tr>
+
+      <tr>
+        <td>Capital</td>
+        <td>The Valley (<a href="http://www.indexmundi.com/anguilla/demographics_profile.html" alt="Index Mundi - 'Anguilla Demographics Profile 2014'">Population: About 2,000+ (2011 estimate)</a>)</td>
+      </tr>
+
+      <tr>
+        <td>Location</td>
+        <td>Caribbean Sea ('<a href="https://en.wikipedia.org/wiki/Lesser_Antilles" alt="Wikipedia - Lesser Antilles">Lesser Antilles</a>')</td>
+      </tr>
+
+      <tr>
+        <td>Overall Land Size</td>
+        <td>35 square miles (rough estimate); <a href="https://en.wikipedia.org/wiki/Anguilla#Geography" alt="Wikipedia - Anguilla (Geography)">this land size includes a number of adjacent islands, islets, and cays both northwest, northeast, and (slightly) southwest of the main island of Anguilla.</a></td>
+      </tr>
+
+      <tr>
+        <td>Population</td>
+        <td><a href="http://countrymeters.info/en/Anguilla" alt="Country Meters - Anguilla">16,866 (2016; subject to change)</a> (there are other [online] sources that have placed the current population anywhere between 13,000+ and 16,000+ between 2013 and 2016)</td>
+      </tr>
+
+      <tr>
+        <td>Year Established as a British 'crown colony'</td>
+        <td><a href="http://www.encyclopedia.com/topic/Anguilla.aspx" alt="Encyclopedia.com - Anguilla">1980 (originally part of <strong>St Kitts and Nevis</strong></a> (currently a <a href="https://en.wikipedia.org/wiki/Commonwealth_realm" alt="Wikipedia - Commonwealth Realm">British Commonwealth Nation</a>))</td>
+      </tr>
+
+      <tr>
+        <td>[Official] Motto</td>
+        <td>"<strong><i>Strength and Endurance</i></strong>"</td>
+      </tr>
+
+    </table> <br/>
+
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/uTq0_stMc_g" frameborder="0" allowfullscreen></iframe>
+    <figcaption>Credit goes to <a href="https://www.youtube.com/channel/UCAlmvYwdTjQzmK7pmzBn5BQ" alt="YouTube Home Page of Bea Broda"><strong>Bea Broda</strong></a> for posting this video on YouTube.</figcaption> <br/>
 
     <div id="map"></div>
     <script>
       function initMap() {
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
-          center: {lat: 18.2174965, lng: -63.0831522},
-          zoom: 11
+          center: {lat: 18.3058347, lng: -63.0557646},
+          zoom: 10
         });
       }
     </script>
