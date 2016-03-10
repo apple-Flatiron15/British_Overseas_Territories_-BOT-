@@ -13,7 +13,7 @@ body {
   margin-left: -150px;
   /*Utilized the format of the answer in this link: ('Stack Overflow - CSS, CENTERED element over Google Maps'
   (http://stackoverflow.com/questions/9708569/css-centered-element-over-google-maps))*/
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 h1 {
@@ -57,4 +57,12 @@ table {
 tr th {
   font-size: 150%;
   text-align:center;
+}
+
+div #footer {
+  display: table-cell;
+  vertical-align: text-bottom;
+  border: 1px solid #f00;
+  height: 100px;
+  width: 100px;
 }
